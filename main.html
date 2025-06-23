@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-[#202020] flex h-screen items-center justify-center">
+  <div class="bg-[#202020] h-screen max-w-[1460px] w-full ">
+    <main class="bg-[#007AFF] text-white p-6 flex flex-col gap-8 md:grid md:grid-cols-9 md:grid-rows-5 md:gap-4 md:p-14">
+      <div class="hidden md:flex md:col-span-2 md:row-span-5 flex items-center justify-center gap-1">
+        <div class="w-[5px] h-[22px] bg-white rounded-2xl"></div>
+        <div class="w-[5px] h-[19px] bg-white rounded-2xl"></div>
+        <div class="w-[5px] h-[16px] bg-white rounded-2xl"></div>
+      </div>
+      <div class="md:col-span-4 md:row-span-5 md:col-start-3 grid grid-cols-4 grid-rows-5 gap-2">
+        <div class="col-span-1 row-span-5">
+          <h1 class="text-[clamp(0.7rem,2vw,1.6rem)] mb-6">Product</h1>
+          <ul class="flex flex-col gap-2  text-[clamp(0.6rem,1.1vw,1rem)]" >
+            <li>Landing Page</li>
+            <li>Popup Builder</li>
+            <li>Web design</li>
+            <li>Contact</li>
+            <li>Intregations</li>
+          </ul>
+        </div>
+        <div class="col-span-1 row-span-5">
+          <h1  class="text-[clamp(0.7rem,1.9vw,1.6rem)] mb-6">Use Cases</h1>
+          <ul class="flex flex-col gap-2  text-[clamp(0.6rem,1.1vw,1rem)]">
+            <li>Web-designers</li>
+            <li>Marketers</li>
+            <li>Small Business</li>
+            <li>Website Builder</li>
+          </ul>
+        </div>
+        <div class="col-span-1 row-span-5">
+          <h1  class="text-[clamp(0.7rem,2vw,1.6rem)] mb-6">Resources</h1>
+          <ul class="flex flex-col gap-2  text-[clamp(0.6rem,1.1vw,1rem)]">
+            <li>Academy</li>
+            <li>Blog</li>
+            <li>Themes</li>
+            <li>Hosting</li>
+            <li>Developers</li>
+            <li>Support</li>
+          </ul>
+        </div>
+        <div class="col-span-1 row-span-5">
+          <h1  class="text-[clamp(0.7rem,2vw,1.6rem)] mb-6">Company</h1>
+          <ul class="flex flex-col gap-2 text-[clamp(0.6rem,1.1vw,1rem)] ">
+            <li>About Us</li>
+            <li>Careers</li>
+            <li>FAQs</li>
+            <li>Teams </li>
+            <li>Contact Us</li>
+          </ul>
+        </div>
+      </div>
+      <div class="order-first md:order-none md:col-start-7 md:col-span-3 md:w-[80%] md:row-span-5 flex flex-col md:ml-10">
+        <p class="text-[2rem] md:text-[clamp(0.7rem,2vw,1.6rem)] mb-4" >Subscibe</p>
+        <input class="focus:border-yellow-500  p-2 mb-3 rounded-lg border-2 border-gray-300 outline-0 text-black" type="text" placeholder="UserName">
+        <input class="focus:border-yellow-500  p-2 mb-3 rounded-lg border-2 border-gray-300 outline-0 text-black" type="text" placeholder="Email">
+        <div class="relative">
+          <input class="password focus:border-yellow-500 p-2 mb-3 w-full rounded-lg border-2 border-gray-300 outline-0 text-black" type="password" placeholder="Password" >
+          <span class="togglepass absolute right-3 top-3"><img id="eye" src="/img/eye-off.svg" alt=""></span>
+          <ul class="validBox mb-2 text-xs text-gray-300 space-y-1" id="password-rules">
+            <li id="length" class="flex items-center"><span class="mr-2 h-2 w-2 rounded bg-red-600"></span> At least 8 characters</li>
+            <li id="number" class="flex items-center"><span class="mr-2 h-2 w-2 rounded bg-red-600"></span> Includes a number</li>
+            <li id="uppercase"class="flex items-center"><span class="mr-2 h-2 w-2 rounded bg-red-600"></span> Includes uppercase letter</li>
+          </ul>
+        </div>
+        <div class="flex gap-1 mb-4">
+          <input type="checkbox">
+          <p class="text-xs">Subscribe to newsletter</p>
+        </div>
+        <button  class="hover:border-green-500 hover:text-green-600 p-2 rounded-lg text-[1.4rem] border-2 border-white bg-gradient-to-l from-[#FEAB52] to-[#FEDC58]">SUBSCRIBE</button>
+      </div>
+    </main>
+    <hr class="h-[2px] bg-gray-300" />
+    <footer class="bg-[#22242A] md:grid md:grid-cols-9 gap-2">
+      <div class="md:col-span-9 flex md:p-14 py-5 px-2 flex justify-between">
+        <div class="text-white">
+          <p class="text-[.6rem] md:text-[.8rem] text-gray-300">@ 2021 All Rights Reserved</p>
+        </div>
+        <div>
+          <ol class="flex gap-4">
+            <li class="h-[18px] w-[18px] md:h-[24px] md:w-[24px]"><img src="img/facebook.svg"alt="" ></li>
+            <li class="h-[18px] w-[18px]  md:h-[24px] md:w-[24px]"><img src="img/gitlab.svg" alt=""></li>
+            <li class="h-[18px] w-[18px]  md:h-[24px] md:w-[24px]"><img src="img/twitter.svg" alt=""></li>
+            <li class="h-[18px] w-[18px]  md:h-[24px] md:w-[24px]"><img src="img/linkedin.svg" alt=""></li>
+            <li class="h-[18px] w-[18px]  md:h-[24px] md:w-[24px]"><img src="img/figma.svg" alt=""></li>
+
+          </ol>
+        </div>
+      </div>
+    </footer>
+
+  </div>
+  <script>
+    const input=document.querySelector('.password')
+    const span=document.querySelector('.togglepass')
+    const img=document.getElementById('eye')
+    const validBox=document.querySelector('.validBox')
+
+    span.addEventListener('click',()=>{
+      const type=input.type === 'password';
+      input.type =type ?"text":"password";
+      eye.src= type ? "/img/eye.svg": "/img/eye-off.svg"
+    })
+
+    input.addEventListener("input",()=>{
+      const value=input.value
+      if (value.length >= 8) {
+        setGreen("length");
+      } else {
+        setRed("length");
+      }
+      if (/\d/.test(value)) {
+        setGreen("number");
+      } else {
+        setRed("number");
+      }
+      if (/[A-Z]/.test(value)) {
+        setGreen("uppercase");
+      } else {
+        setRed("uppercase");
+      }
+    });
+  function setGreen(id) {
+    const parent = document.getElementById(id);
+    const dot = parent.querySelector("span");
+    dot.classList.remove("bg-red-600");
+    dot.classList.add("bg-green-500");
+  }
+  function setRed(id) {
+    const parent = document.getElementById(id);
+    const dot = parent.querySelector("span");
+    dot.classList.remove("bg-green-500");
+    dot.classList.add("bg-red-600");
+  
+    }
+
+
+  </script>
+</body>
+</html>
